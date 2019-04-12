@@ -1,0 +1,46 @@
+// Variables
+
+$logo-width: 138px;
+
+body, html {
+    font-size: 10px;
+    font-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: url('../images/bg.jpg') center bottom no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+
+    &__content {
+        flex-grow: 1;
+        min-width: 320px;
+    }
+
+    &__container {
+        margin: 4.5rem;
+
+        @media (max-width: 1270px) {
+            margin: 2rem;
+        }
+    }
+}
+
+@import "base/typography";
+@import "base/sidebar";
+@import "base/header";
+@import "hamburgers/hamburgers";
+@import "base/buttons";
+@import "base/content";
+@import "base/farm-nav";
+@import "base/table";
+@import "base/chart";
+@import "base/animal";

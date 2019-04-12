@@ -1,0 +1,135 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+  <div class="app__container content content--report">
+    <div class="content__header">
+      <h2 class="content__header-title">Farm Production</h2>
+      
+      <div class="content__header-controls">
+        <ul class="content__header-controls-list">
+          <li class="content__header-controls-item"><a href="" class="content__header-controls-link">Quarterly</a></li>
+          <li class="content__header-controls-item"><a href="" class="content__header-controls-link">YTD</a></li>
+          <li class="content__header-controls-item">
+            <a href="" class="content__header-controls-link active">
+              Annual
+            </a>
+            <ul class="sub-menu">
+              <li><a href="">2018</a></li>
+              <li><a href="">2017</a></li>
+              <li><a href="">2016</a></li>
+              <li><a href="">2015</a></li>
+              <li><a href="">2014</a></li>
+              <li><a href="">2013</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content__body">
+      <div class="chart chart--production">
+        <canvas id="chart_production" width="200" height="200"></canvas>
+      </div>
+      <!-- <img class="content__graph content__graph--production" src="./images/grpah-production.png" alt=""> -->
+    </div>
+
+    <div class="content__footer">
+      <ul>
+        <li><a href="">Farm Statistics</a></li>
+        <li><a href="">YTD Milk Yeild</a></li>
+        <li><a href="">Farm Growth Rate</a></li>
+        <li><a href=""># of Cows</a></li>
+        <li><a class="is-active" href="">Farm Production</a></li>
+        <li><a href="">Farm Costs</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="app__container">
+    <div class="farm-nav">
+      <div class="farm-nav__item farm-nav__item--active">
+        <div class="farm-nav__item-title">East Farm</div>
+        <ul class="farm-nav__list">
+          <li class="farm-nav__list-item">
+            <div class="farm-nav__list-holder">
+              <img src="./images/cow-sm.svg" class="farm-nav__list-icon">
+            </div>
+            <strong>12 457</strong> Cows
+          </li>
+          <li class="farm-nav__list-item">
+            <div class="farm-nav__list-holder">
+              <img src="./images/milk-bottle.svg" class="farm-nav__list-icon">
+            </div>
+            <strong>20 000 l</strong> 
+            Monthly Milk Yield
+          </li>
+        </ul>
+      </div>
+
+      <div class="farm-nav__item">
+        <div class="farm-nav__item-title">West Farm</div>
+        <ul class="farm-nav__list">
+          <li class="farm-nav__list-item">
+            <div class="farm-nav__list-holder">
+              <img src="./images/cow-sm.svg" class="farm-nav__list-icon">
+            </div>
+            <strong>25 657 </strong> Cows
+          </li>
+          <li class="farm-nav__list-item">
+            <div class="farm-nav__list-holder">
+              <img src="./images/milk-bottle.svg" class="farm-nav__list-icon">
+            </div>
+            <strong>45 000 l </strong> Monthly Milk Yield
+          </li>
+        </ul>
+        <a href="" class="farm-nav__link-view">View Farm</a>
+      </div>
+
+      <div class="farm-nav__item">
+          <div class="farm-nav__item-title">South Farm</div>
+          <ul class="farm-nav__list">
+            <li class="farm-nav__list-item">
+              <div class="farm-nav__list-holder">
+                <img src="./images/cow-sm.svg" class="farm-nav__list-icon">
+              </div>
+              <strong>6 296</strong> Cows
+            </li>
+            <li class="farm-nav__list-item">
+              <div class="farm-nav__list-holder">
+                <img src="./images/milk-bottle.svg" class="farm-nav__list-icon">
+              </div>
+              <strong>7 000 l</strong> Monthly Milk Yield
+            </li>
+          </ul>
+          <a href="" class="farm-nav__link-view">View Farm</a>
+      </div>
+
+      <div class="farm-nav__item">
+          <div class="farm-nav__item-title">North Farm</div>
+          <ul class="farm-nav__list">
+            <li class="farm-nav__list-item">
+              <div class="farm-nav__list-holder">
+                <img src="./images/cow-sm.svg" class="farm-nav__list-icon">
+              </div>
+              <strong>22 363</strong> Cows
+            </li>
+            <li class="farm-nav__list-item">
+              <div class="farm-nav__list-holder">
+                <img src="./images/milk-bottle.svg" class="farm-nav__list-icon">
+              </div>
+              <strong>40 000 l</strong> Monthly Milk Yield
+            </li>
+          </ul>
+          <a href="" class="farm-nav__link-view">View Farm</a>
+      </div>
+      <!-- <div class="farm-nav__item farm-nav__item--empty"></div>
+      <div class="farm-nav__item farm-nav__item--empty"></div> -->
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,53 @@
+.app__sidebar {
+    background: rgba(0,0,0,0.40);
+    flex-shrink: 1;
+    transition: all 0.3s ease;
+
+    @media (max-width: 992px) {
+        margin-left: -178px;
+
+        &--opened {
+            margin-left: 0;
+        }
+    }
+
+    &-logo{
+        display: block;
+        padding: 1.5rem 2rem;
+
+        &-img {
+            width: $logo-width;
+        }
+    }
+
+    &-nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.5rem;
+
+        &-link {
+            padding: 2rem 3rem;
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.6rem;
+
+            &.active {
+                background: rgba(0,0,0,0.10);
+                position: relative;
+                font-weight: bold;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 1rem;
+                    height: 100%;
+                    background: #1B8399;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

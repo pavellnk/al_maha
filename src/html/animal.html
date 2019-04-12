@@ -1,0 +1,110 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+  
+  <div class="animal app__container">
+    <div class="animal__content">
+      <div class="animal__header">
+        <img src="./images/cow-lg.svg" alt="" class="animal__pic">
+        <div class="animal__header-table">
+          <table>
+            <thead>
+              <tr>
+                <td>Cow ID</td>
+                <td>Health Status</td>
+                <td>Temperature</td>
+                <td>Activity</td>
+                <td>Ranch</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="amount">1</span>
+                  399
+                </td>
+                <td class="text-red">
+                  <i class="circle red"></i>
+                  Sick
+                </td>
+                <td>
+                  38.6
+                </td>
+                <td class="text-red">
+                  Low
+                </td>
+                <td>
+                  East Upper
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="animal__content-table">
+        <table>
+          <tr>
+            <td>Average Daily Milk Yield</td>
+            <td>10l</td>
+            <td>8000 cows in East Upper Ranch</td>
+            <td>Immunization Records</td>
+          </tr>
+          <tr>
+            <td>YTD Milk Yiled</td>
+            <td>3090l</td>
+            <td>Related Cows</td>
+            <td>
+              <span class="date">1 / 07 / 2017</span>
+            </td>
+          </tr>
+          <tr>
+            <td>2017 Average Milk Yiled</td>
+            <td>8l</td>
+            <td>
+              <span class="gender">
+                <span class="blue">1  568</span>
+                Mother
+              </span>
+              <span class="gender">
+                <span class="blue">1  399</span>
+                Calf
+              </span>
+            </td>
+            <td>
+              <span class="date">1 / 06 / 2016</span>
+              <span class="date">1 / 06 / 2015</span>
+            </td>
+          </tr>
+          <tr>
+            <td># of Calves Produced</td>
+            <td>10</td>
+            <td>
+              <span class="gender">
+                <span class="blue">1  214</span>
+                Calf
+              </span>
+              <span class="gender">
+                <span class="blue">1  840</span>
+                Calf
+              </span>
+            </td>
+            <td>
+              <span class="date">1 / 06 / 2014</span>
+              <span class="date">1 / 06 / 2013</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <a href="" class="back-link">Back to Farm Level</a>
+  </div>
+
+{% endblock %}

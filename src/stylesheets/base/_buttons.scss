@@ -1,0 +1,43 @@
+.btn {
+    display: inline-block;
+    border: 0;
+    text-decoration: none;
+    padding: 0.5em 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+
+    &--primary {
+        border: .1rem solid #1B8399;
+        border-radius: .3rem;
+        color: #fff;
+        font-size: 1.4rem;
+        background-color: transparent;
+
+        &:hover {
+            background-color: #1B8399;
+        }
+    }
+}
+
+.back-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 2.5rem;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1b8399;
+
+    &:before {
+        content: '';
+        display: block;
+        background: url('../images/arrow-left.svg');
+        width: 0.6rem;
+        height: 0.95rem;
+        margin-right: 0.8rem;
+    }
+}

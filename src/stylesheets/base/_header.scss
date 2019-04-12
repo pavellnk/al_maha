@@ -1,0 +1,44 @@
+.app__header {
+    background: rgba(0,0,0,0.20);
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 3rem;
+
+    @media (max-width: 992px) {
+        padding: 0.5rem 0;
+        justify-content: space-between;
+
+        .app__header-hamburger {
+            display: block !important;
+        }
+    }
+
+    &-hamburger {
+        display: none !important;
+    }
+
+    &-controls {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 992px) {
+            padding-right: 1rem;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 1.4rem;
+            margin-right: 2rem;
+
+            img {
+                border-radius: 50%;
+                width: 3.5rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}

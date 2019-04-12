@@ -1,0 +1,141 @@
+.app__table {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.03);
+        padding: 2.3rem 3rem;
+    }
+
+    &-header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #000000;
+
+        @media (max-width: 767px) {
+            font-size: 2rem;
+        }
+    }
+
+    &-header .link-all {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #1b8399;
+
+        &:after {
+            content: '';
+            display: block;
+            background: url('../images/arrow-down.svg');
+            width: 0.95rem;
+            height: 0.6rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+    &-wrapper {
+        overflow: auto;
+    }
+
+    table {
+        width: 100%;
+        min-width: 870px;
+        border-collapse: collapse;
+        margin-bottom: 2rem;
+
+        thead {
+            background-color: rgba(0, 0, 0, 0.05);
+            border-top: 0.1rem solid #fff;
+
+            tr {
+                height: 5rem;
+            }
+
+            td {
+                text-transform: uppercase;
+                font-size: 12px;
+                letter-spacing: 4px;
+                color: rgba(0, 0, 0, 0.7);
+                text-align: left;
+                padding-left: 30px;
+            }
+        }
+
+
+        tbody {
+            // border-left: 60px solid #fff;
+            // border-right: 60px solid #fff;
+            &:before {
+                content: '';
+                display: block;
+                height: 2rem;
+            }
+            tr {
+                height: 43px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+            td {
+                font-size: 11px;
+                letter-spacing: 1px;
+                color: #000000;
+                padding-left: 30px;
+
+                &.text-red {
+                    color: #d50d49;
+                }
+
+                .amount {
+                    margin-right: 5px;
+                }
+
+                .date {
+                    vertical-align: bottom;
+                    font-size: 9px;
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+
+                .attention-icon {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 20px;
+                    height: 18px;
+                    background: url('../images/attention-icon.svg');
+                    margin-right: 0.7rem;
+                }
+
+                .circle {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                    margin-right: 1rem;
+
+                    &.red {
+                        background-color: #d50d49;
+                    }
+                    &.green {
+                        background-color: #1b996f;
+                    }
+                    &.yellow {
+                        background-color: #e4d91b;
+                    }
+                }
+            }
+        }
+    }
+}

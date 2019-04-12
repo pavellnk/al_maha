@@ -1,0 +1,114 @@
+.animal {
+
+	&__content {
+		overflow: auto;
+		margin-bottom: 1.5rem;
+		background-color: #ffffff;
+	}
+
+	&__header {
+		min-width: 850px;
+		background-color: #f7f7f7;
+	}
+
+	&__pic {
+		margin: 3rem 0 -6.5rem 5rem;
+	}
+
+	&__header-table {
+		
+		table {
+			width: 100%;
+			border-collapse: collapse;
+
+			.circle {
+				display: inline-block;
+				vertical-align: middle;
+				width: 1rem;
+				height: 1rem;
+				border-radius: 50%;
+
+				&.red {
+                    background-color: #d50d49;
+                }
+                &.green {
+                    background-color: #1b996f;
+                }
+                &.yellow {
+                    background-color: #e4d91b;
+                }
+			}
+		}
+
+		td:first-child {
+			padding-left: 25rem;
+		}
+
+		thead tr {
+			height: 40px;
+		}
+
+		thead td {
+			text-transform: uppercase;
+			font-size: 12px;
+			font-weight: 900;
+			letter-spacing: 2px;
+			color: #000000;
+			padding-right: 3rem;
+		}
+
+		tbody tr {
+			background-color: #f2f2f2;
+			height: 4rem;
+		}
+
+		tbody td {
+			font-size: 11px;
+			letter-spacing: 1px;
+			color: #000000;
+			padding-right: 3rem;
+
+			&.text-red {
+				color: #d50d49;
+			}
+		}
+	}
+
+	&__content-table {
+		box-sizing: border-box;
+		min-width: 850px;
+		padding: 4rem 7rem 7rem;
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		tr {
+			height: 4rem;
+		}
+
+		table td {
+			font-size: 1.3rem;
+			letter-spacing: 1.2px;
+			color: #000000;
+
+			.date {
+				display: block;
+			}
+
+			.gender {
+				display: block;
+				font-size: 1.1rem;
+				letter-spacing: 1px;
+				color: rgba(0, 0, 0, 0.5);
+			}
+
+			.blue {
+				vertical-align: middle;
+				font-size: 1.4rem;
+				color: #1b8399;		
+			}
+		}
+	}
+}
